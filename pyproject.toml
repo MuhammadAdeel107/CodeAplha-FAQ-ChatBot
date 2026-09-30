@@ -1,0 +1,27 @@
+[project]
+name = "faq-chatbot"
+version = "0.1.0"
+description = "A simple NLP based FAQ chatbot"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "flask>=3.1.0",
+    "nltk>=3.9.0",
+    "scikit-learn>=1.7.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.0,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

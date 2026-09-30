@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FAQ Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+
+    <main class="chat-container">
+
+        <!-- Header -->
+        <header class="chat-header">
+
+            <div class="bot-avatar">
+                ?
+            </div>
+
+            <div class="header-content">
+                <h1>FAQ Assistant</h1>
+                <p>Ask me anything about our services</p>
+            </div>
+
+        </header>
+
+
+        <!-- Chat Messages -->
+        <section
+            id="chat-box"
+            class="chat-box"
+            aria-live="polite"
+        >
+
+            <!-- Initial Bot Message -->
+            <div class="message bot-message">
+
+                <div class="message-label">
+                    Assistant
+                </div>
+
+                <div class="message-text">
+                    Hello! How can I help you today?
+                    You can ask me about delivery, payments,
+                    refunds, orders, accounts, or customer support.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Question Form -->
+        <form
+            id="chat-form"
+            class="chat-form"
+        >
+
+            <div class="input-wrapper">
+
+                <input
+                    type="text"
+                    id="question"
+                    name="question"
+                    placeholder="Type your question..."
+                    autocomplete="off"
+                    maxlength="500"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    id="send-button"
+                >
+                    Send
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <script
+        src="{{ url_for('static', filename='js/app.js') }}"
+    ></script>
+
+</body>
+</html>
