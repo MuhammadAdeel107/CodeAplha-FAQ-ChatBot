@@ -197,3 +197,20 @@ Example response:
   "matched_question": "How much does shipping cost?",
   "score": 1.0
 }
+Example Questions
+Try questions such as:
+How much does shipping cost?
+How long will my order take?
+Where can I track my order?
+What payment methods do you accept?
+Can I pay with a credit card?
+Can I cancel my order?
+What is your refund policy?
+How can I get a refund?
+How do I create an account?
+I forgot my password
+How can I contact customer support?
+What are your business hours?
+The chatbot can also handle differently worded questions because it uses similarity-based matching rather than
+relying only on exact text.
+
